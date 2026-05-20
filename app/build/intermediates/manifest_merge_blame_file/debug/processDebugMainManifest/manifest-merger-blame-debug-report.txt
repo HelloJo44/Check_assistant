@@ -9,20 +9,20 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:5-77
-11-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:22-75
+11-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:4:5-77
+11-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:4:22-75
 12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-12-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:5-76
-12-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:22-74
+12-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:5-76
+12-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:22-74
 13    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-13-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:5-94
-13-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:22-92
+13-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:5-94
+13-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:22-92
 14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
-14-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:5-89
-14-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:22-86
+14-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:5-89
+14-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:22-86
 15    <uses-permission android:name="android.permission.VIBRATE" />
-15-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:9:5-66
-15-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:9:22-63
+15-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:5-66
+15-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:22-63
 16
 17    <permission
 17-->[androidx.core:core:1.9.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\bd0a1810a5afc21b1d7f67c446711275\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
@@ -37,75 +37,75 @@
 22
 23    <application
 24        android:allowBackup="true"
-24-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:11:9-35
+24-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:10:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 25-->[androidx.core:core:1.9.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\bd0a1810a5afc21b1d7f67c446711275\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 26        android:dataExtractionRules="@xml/data_extraction_rules"
-26-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:12:9-65
+26-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:11:9-65
 27        android:debuggable="true"
 28        android:extractNativeLibs="false"
 29        android:fullBackupContent="@xml/backup_rules"
-29-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:13:9-54
+29-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:12:9-54
 30        android:icon="@mipmap/ic_launcher"
-30-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:14:9-43
+30-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:13:9-43
 31        android:label="Assistant (TEST)"
-31-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:15:9-36
+31-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:14:9-36
 32        android:roundIcon="@mipmap/ic_launcher_round"
-32-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:16:9-54
+32-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:15:9-54
 33        android:supportsRtl="true"
-33-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:17:9-35
+33-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:16:9-35
 34        android:theme="@style/Theme.FloatingButtonApp" >
-34-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:18:9-55
+34-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:17:9-55
 35        <activity
-35-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:20:9-27:20
+35-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:19:9-26:20
 36            android:name="com.example.floatingbuttonapp.MainActivity"
-36-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:21:13-41
+36-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:20:13-41
 37            android:exported="true" >
-37-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:22:13-36
+37-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:21:13-36
 38            <intent-filter>
-38-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:23:13-26:29
+38-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:22:13-25:29
 39                <action android:name="android.intent.action.MAIN" />
-39-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:17-69
-39-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:25-66
+39-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:23:17-69
+39-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:23:25-66
 40
 41                <category android:name="android.intent.category.LAUNCHER" />
-41-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:25:17-77
-41-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:25:27-74
+41-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:17-77
+41-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:27-74
 42            </intent-filter>
 43        </activity>
 44
 45        <service
-45-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:29:9-47:19
+45-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:28:9-46:19
 46            android:name="com.example.floatingbuttonapp.FloatingButtonService"
-46-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:30:13-79
+46-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:29:13-79
 47            android:enabled="true"
-47-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:31:13-35
+47-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:30:13-35
 48            android:exported="true"
-48-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:32:13-36
+48-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:31:13-36
 49            android:foregroundServiceType="specialUse"
-49-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:34:13-55
+49-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:33:13-55
 50            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-50-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:33:13-79
+50-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:32:13-79
 51            <intent-filter>
-51-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:35:13-38:29
+51-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:34:13-37:29
 52                <action android:name="android.accessibilityservice.AccessibilityService" />
-52-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:36:17-92
-52-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:36:25-89
+52-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:35:17-92
+52-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:35:25-89
 53            </intent-filter>
 54
 55            <meta-data
-55-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:40:13-42:72
+55-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:39:13-41:72
 56                android:name="android.accessibilityservice"
-56-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:41:17-60
+56-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:40:17-60
 57                android:resource="@xml/accessibility_service_config" />
-57-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:42:17-69
+57-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:41:17-69
 58
 59            <property
-59-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:44:13-45:98
+59-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:43:13-44:98
 60                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_TYPE"
-60-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:44:23-79
+60-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:43:23-79
 61                android:value="Assistant flottant pour automatisation de tâches de nettoyage." />
-61-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:45:17-95
+61-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:44:17-95
 62        </service>
 63
 64        <provider

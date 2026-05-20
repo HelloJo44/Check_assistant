@@ -1,7 +1,7 @@
 -- Merging decision tree log ---
 application
-INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:10:5-48:19
-INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:10:5-48:19
+INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:9:5-47:19
+INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:9:5-47:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\7d4abf3f63802da34012a61d4b46f1a4\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\7d4abf3f63802da34012a61d4b46f1a4\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Laure locale\.gradle\caches\8.13\transforms\84419f5a1f02fef379bf691e47e8b3b3\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -23,27 +23,27 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\La
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\bd0a1810a5afc21b1d7f67c446711275\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
 		INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:15:9-36
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:14:9-36
 	android:fullBackupContent
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:12:9-54
 	android:roundIcon
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:18:9-55
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:17:9-55
 	android:dataExtractionRules
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:12:9-65
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:11:9-65
 manifest
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\7d4abf3f63802da34012a61d4b46f1a4\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Laure locale\.gradle\caches\8.13\transforms\84419f5a1f02fef379bf691e47e8b3b3\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Laure locale\.gradle\caches\8.13\transforms\0d0dfcd047f96ea9ef344b9625912144\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -89,78 +89,76 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Laure l
 		INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml
-	xmlns:tools
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:5-77
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:4:5-77
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:22-75
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:4:22-75
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:5-76
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:5-76
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:22-74
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:22-74
 uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:5-94
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:5-94
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:22-92
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:22-92
 uses-permission#android.permission.FOREGROUND_SERVICE_SPECIAL_USE
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:5-89
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:5-89
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:22-86
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:22-86
 uses-permission#android.permission.VIBRATE
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:9:5-66
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:5-66
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:9:22-63
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:22-63
 activity#com.example.floatingbuttonapp.MainActivity
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:20:9-27:20
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:19:9-26:20
 	android:exported
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:21:13-41
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:20:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:23:13-26:29
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:22:13-25:29
 action#android.intent.action.MAIN
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:27-74
 service#com.example.floatingbuttonapp.FloatingButtonService
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:29:9-47:19
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:28:9-46:19
 	android:enabled
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:31:13-35
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:30:13-35
 	android:exported
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:32:13-36
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:31:13-36
 	android:permission
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:33:13-79
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:32:13-79
 	android:foregroundServiceType
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:34:13-55
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:33:13-55
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:30:13-79
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:29:13-79
 intent-filter#action:name:android.accessibilityservice.AccessibilityService
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:35:13-38:29
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:34:13-37:29
 action#android.accessibilityservice.AccessibilityService
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:36:17-92
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:35:17-92
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:36:25-89
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:35:25-89
 meta-data#android.accessibilityservice
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:40:13-42:72
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:39:13-41:72
 	android:resource
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:42:17-69
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:41:17-60
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:40:17-60
 property#android.app.PROPERTY_SPECIAL_USE_FGS_TYPE
-ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:44:13-45:98
+ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:43:13-44:98
 	android:value
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:45:17-95
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:44:17-95
 	android:name
-		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:44:23-79
+		ADDED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:43:23-79
 uses-sdk
 INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml
