@@ -1,0 +1,178 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.floatingbuttonapp.test"
+4    android:versionCode="1"
+5    android:versionName="1.1-TEST" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:5-77
+11-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:5-76
+12-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:6:22-74
+13    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+13-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:5-94
+13-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:7:22-92
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+14-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:5-89
+14-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:8:22-86
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:9:5-66
+15-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:9:22-63
+16
+17    <permission
+17-->[androidx.core:core:1.9.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\bd0a1810a5afc21b1d7f67c446711275\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+18        android:name="com.example.floatingbuttonapp.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.9.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\bd0a1810a5afc21b1d7f67c446711275\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.9.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\bd0a1810a5afc21b1d7f67c446711275\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.example.floatingbuttonapp.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.9.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\bd0a1810a5afc21b1d7f67c446711275\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.9.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\bd0a1810a5afc21b1d7f67c446711275\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+22
+23    <application
+24        android:allowBackup="true"
+24-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:11:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.9.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\bd0a1810a5afc21b1d7f67c446711275\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+26        android:dataExtractionRules="@xml/data_extraction_rules"
+26-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:12:9-65
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:fullBackupContent="@xml/backup_rules"
+29-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:13:9-54
+30        android:icon="@mipmap/ic_launcher"
+30-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:14:9-43
+31        android:label="Assistant (TEST)"
+31-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:15:9-36
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:16:9-54
+33        android:supportsRtl="true"
+33-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:17:9-35
+34        android:theme="@style/Theme.FloatingButtonApp" >
+34-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:18:9-55
+35        <activity
+35-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:20:9-27:20
+36            android:name="com.example.floatingbuttonapp.MainActivity"
+36-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:21:13-41
+37            android:exported="true" >
+37-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:22:13-36
+38            <intent-filter>
+38-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:23:13-26:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:17-69
+39-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:24:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:25:17-77
+41-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:25:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <service
+45-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:29:9-47:19
+46            android:name="com.example.floatingbuttonapp.FloatingButtonService"
+46-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:30:13-79
+47            android:enabled="true"
+47-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:31:13-35
+48            android:exported="true"
+48-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:32:13-36
+49            android:foregroundServiceType="specialUse"
+49-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:34:13-55
+50            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+50-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:33:13-79
+51            <intent-filter>
+51-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:35:13-38:29
+52                <action android:name="android.accessibilityservice.AccessibilityService" />
+52-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:36:17-92
+52-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:36:25-89
+53            </intent-filter>
+54
+55            <meta-data
+55-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:40:13-42:72
+56                android:name="android.accessibilityservice"
+56-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:41:17-60
+57                android:resource="@xml/accessibility_service_config" />
+57-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:42:17-69
+58
+59            <property
+59-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:44:13-45:98
+60                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_TYPE"
+60-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:44:23-79
+61                android:value="Assistant flottant pour automatisation de tâches de nettoyage." />
+61-->G:\Android_Projet\Check_assistant\app\src\main\AndroidManifest.xml:45:17-95
+62        </service>
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\007a73b5dae23234ec92f7a3b4ce38ca\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\007a73b5dae23234ec92f7a3b4ce38ca\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+66            android:authorities="com.example.floatingbuttonapp.test.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\007a73b5dae23234ec92f7a3b4ce38ca\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\007a73b5dae23234ec92f7a3b4ce38ca\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\007a73b5dae23234ec92f7a3b4ce38ca\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\007a73b5dae23234ec92f7a3b4ce38ca\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\007a73b5dae23234ec92f7a3b4ce38ca\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Laure locale\.gradle\caches\8.13\transforms\a91840e8707b7f87ada22cea8cf3254a\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Laure locale\.gradle\caches\8.13\transforms\a91840e8707b7f87ada22cea8cf3254a\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Laure locale\.gradle\caches\8.13\transforms\a91840e8707b7f87ada22cea8cf3254a\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+76                android:value="androidx.startup" />
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+77        </provider>
+78
+79        <receiver
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+80            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+81            android:directBootAware="false"
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+82            android:enabled="true"
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+83            android:exported="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+84            android:permission="android.permission.DUMP" >
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+86                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+89                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+92                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+95                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Laure locale\.gradle\caches\8.13\transforms\df05b049b5c4becfe81dcfac55f20ed9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+96            </intent-filter>
+97        </receiver>
+98    </application>
+99
+100</manifest>

@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/drawable_fond_bouton_rond.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/drawable/fond_bouton_rond.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/drawable_bouton_rouge_stop.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/drawable/bouton_rouge_stop.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/drawable_bouton_violet_replie.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/drawable/bouton_violet_replie.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/layout_layout_trash_bin.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/layout/layout_trash_bin.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/xml_accessibility_service_config.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/drawable_bouton_vert_bonok.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/drawable/bouton_vert_bonok.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/drawable_fond_conteneur_flottant.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/drawable/fond_conteneur_flottant.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/drawable_bouton_violet_doux.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/drawable/bouton_violet_doux.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/xml_backup_rules.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/layout_layout_floating_widget.xml.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/layout/layout_floating_widget.xml"
+    },
+    {
+        "merged": "com.example.floatingbuttonapp-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.floatingbuttonapp-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    }
+]

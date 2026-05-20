@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color ic_launcher_background
+color white
+drawable bouton_rouge_stop
+drawable bouton_vert_bonok
+drawable bouton_violet_doux
+drawable bouton_violet_replie
+drawable fond_bouton_rond
+drawable fond_conteneur_flottant
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id button_bon_ok
+id button_replie
+id button_stop
+id button_tt_piece
+id floating_container
+id main
+layout activity_main
+layout layout_floating_widget
+layout layout_trash_bin
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.FloatingButtonApp
+style Theme.FloatingButtonApp
+xml accessibility_service_config
+xml backup_rules
+xml data_extraction_rules

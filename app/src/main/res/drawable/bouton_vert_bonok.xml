@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bevel/shadow layer for the green button -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#5AA25A" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Top layer with gradient -->
+    <item android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#88E088"
+                android:endColor="#77D977" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+</layer-list>

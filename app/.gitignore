@@ -1,0 +1,21 @@
+# Fichiers de build Android
+/build/*/build
+.gradle
+/captures
+.externalNativeBuild
+.cxx
+/local.properties
+
+# Fichiers de configuration Android Studio (IDE)
+.idea/
+*.iml
+*.iws
+*.ipr
+/out
+
+# Fichiers système et logs
+.DS_Store
+*.log
+
+# Dossiers temporaires de tests
+/app/build
