@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant Check & Visit - Guide d'utilisation</title>
+    <!-- Importation d'une police moderne et d'icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --secondary: #3a86ff;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --accent-red: #ff4757;
+            --success: #2ed573;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo-icon {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        h1 { margin: 0; font-size: 2.2rem; }
+        .tagline { opacity: 0.8; font-size: 1.1rem; margin-top: 10px; }
+
+        .download-area {
+            margin-top: 30px;
+        }
+
+        .btn-main {
+            display: inline-block;
+            background: var(--primary);
+            color: #000;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+        }
+
+        .btn-main:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 210, 255, 0.4);
+        }
+
+        /* Barre de boutons visuelle */
+        .toolbar-box {
+            background: #334155;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+            border: 2px solid #475569;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .btn-ui {
+            text-align: center;
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        .btn-ui i {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+
+        .btn-ui.stop i { color: var(--accent-red); }
+
+        /* Sections */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #334155;
+        }
+
+        h2 {
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        /* Alertes et Sonneries */
+        .bip-box {
+            border-left: 4px solid var(--success);
+            background: rgba(46, 213, 115, 0.1);
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .trash-alert {
+            border-left: 4px solid var(--accent-red);
+            background: rgba(255, 71, 87, 0.1);
+            padding: 15px;
+        }
+
+        /* Vidéos */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            background: #000;
+            margin: 20px 0;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            border: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            opacity: 0.5;
+            font-size: 0.9rem;
+        }
+
+        .step-num {
+            background: var(--primary);
+            color: black;
+            width: 25px;
+            height: 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo-icon"><i class="fas fa-robot"></i></div>
+        <h1>Assistant Check & Visit</h1>
+        <p class="tagline">L'outil overlay pour automatiser vos états des lieux.</p>
+        
+        <div class="download-area">
+            <a href="https://github.com/VOTRE_NOM/Check-assistant/releases/latest" class="btn-main">
+                <i class="fas fa-download"></i> Télécharger l'APK
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- SECTION : LA BARRE -->
+    <section>
+        <h2><i class="fas fa-layer-group"></i> La Barre d'outils</h2>
+        <p>Voici la fonction de chaque bouton présent sur votre bandeau flottant :</p>
+        
+        <div class="toolbar-box">
+            <div class="btn-ui"><i class="fas fa-minus-square"></i>Réduire</div>
+            <div class="btn-ui stop"><i class="fas fa-stop-circle"></i>STOP</div>
+            <div class="btn-ui"><i class="fas fa-times-circle"></i>NON</div>
+            <div class="btn-ui"><i class="fas fa-check-circle"></i>Bon/OK</div>
+            <div class="btn-ui"><i class="fas fa-forward"></i>TT</div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <p><strong><i class="fas fa-stop-circle" style="color:var(--accent-red)"></i> STOP :</strong> Arrête immédiatement n'importe quel programme en cours (si le robot se trompe ou si vous voulez reprendre la main).</p>
+                <p><strong><i class="fas fa-check-circle" style="color:var(--primary)"></i> Bon/OK :</strong> Remplit la <strong>pièce actuelle</strong> (État Bon, Propreté OK, Fonctionne).</p>
+            </div>
+            <div class="card">
+                <p><strong><i class="fas fa-forward" style="color:var(--primary)"></i> TT (Tout Traiter) :</strong> Lance le remplissage automatique sur <strong>toutes les pièces</strong> de la mission.</p>
+                <p><strong><i class="fas fa-minus-square"></i> Réduire :</strong> Cache la barre pour libérer l'espace visuel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION : FONCTIONNEMENT -->
+    <section>
+        <h2><i class="fas fa-cogs"></i> Principe de fonctionnement</h2>
+        <div class="card">
+            <p><span class="step-num">1</span> Téléchargez votre mission sur <strong>Check & Visit</strong>.</p>
+            <p><span class="step-num">2</span> Allez sur la page <strong>Pièce</strong> (icône maison 🏠). La mission doit être vierge.</p>
+            <p><span class="step-num">3</span> Appuyez sur <strong>OK</strong> (pour la pièce) ou <strong>TT</strong> (pour tout l'appartement).</p>
+            
+            <div class="bip-box">
+                <strong><i class="fas fa-volume-up"></i> Alertes sonores :</strong>
+                <ul>
+                    <li><strong>1 Bip :</strong> Fin du traitement d'une pièce.</li>
+                    <li><strong>3 Bips :</strong> Tout est terminé !</li>
+                </ul>
+            </div>
+
+            <div class="trash-alert">
+                <strong><i class="fas fa-trash-alt"></i> Supprimer la barre :</strong>
+                Pour fermer l'application, restez appuyé sur la barre et glissez-la vers le bas de l'écran sur la <strong>bande rouge</strong> qui apparaît.
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION : LIMITATIONS -->
+    <section>
+        <h2><i class="fas fa-exclamation-triangle"></i> À savoir avant d'utiliser</h2>
+        <ul>
+            <li><strong>Sensibilité :</strong> L'application simule des clics. Les notifications peuvent perturber le robot. <strong>Mettez-vous hors-ligne ou en mode "Ne pas déranger".</strong></li>
+            <li><strong>Écrasement :</strong> Si une pièce est déjà remplie, utiliser <strong>OK</strong> ou <strong>TT</strong> supprimera vos anciennes infos pour mettre "Bon/OK".</li>
+            <li><strong>Murs & Revêtements :</strong> Seul le <strong>Mur A</strong> est rempli. Les autres murs et les revêtements restent vides.</li>
+            <li><strong>Localisation :</strong> Le bandeau ne fonctionne que dans la page "Pièce" de Check & Visit.</li>
+        </ul>
+    </section>
+
+    <!-- SECTION : VIDEOS -->
+    <section>
+        <h2><i class="fab fa-youtube"></i> Démonstrations</h2>
+        <div class="grid">
+            <div>
+                <p>Remplissage d'une pièce (Bouton OK) :</p>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_1" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div>
+                <p>Mode automatique complet (Bouton TT) :</p>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_2" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION : INSTALLATION -->
+    <section>
+        <h2><i class="fas fa-download"></i> Installation simple</h2>
+        <div class="card">
+            <p>1. Téléchargez l'APK via le bouton en haut de page.</p>
+            <p>2. Autorisez l'installation de sources inconnues dans vos paramètres Android.</p>
+            <p>3. Activez l'autorisation <strong>"S'afficher par-dessus les autres applications"</strong>.</p>
+            <p>4. Activez le <strong>"Service d'accessibilité"</strong> pour permettre au robot de cliquer.</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Assistant Check & Visit. Développé pour le gain de productivité.</p>
+</footer>
+
+</body>
+</html>
