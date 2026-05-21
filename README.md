@@ -1,5 +1,7 @@
 # Check Assistant - Assistant Flottant
 
+> **[Cliquez ici pour accéder au Guide d'Utilisation et d'Installation complet](https://HelloJo44.github.io/Check_assistant/)**
+
 Check Assistant est une application Android conçue pour faciliter l'automatisation de tâches (comme le nettoyage) via un bouton flottant et un service d'accessibilité.
 
 ## 🚀 Fonctionnement Global
