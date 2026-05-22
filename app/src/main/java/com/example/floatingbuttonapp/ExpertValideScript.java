@@ -7,7 +7,6 @@ import android.graphics.Rect;
 import android.util.Log;
 import android.view.accessibility.AccessibilityNodeInfo;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -122,28 +121,37 @@ public class ExpertValideScript {
                         break;
                     }
                     scroll(false, 700);
-                    Thread.sleep(1000);
+                    Thread.sleep(1200); // Délai accru pour laisser le RecyclerView se stabiliser
                     continue;
                 }
 
                 AccessibilityNodeInfo cat = categories.get(0);
-                String nomCat = cat.getText() != null ? cat.getText().toString() : "Inconnu";
+                
+                // --- FIX : RAFRAÎCHIR LE NŒUD POUR ÉVITER LES CLICS DÉCALÉS ---
+                if (!cat.refresh() || !cat.isVisibleToUser()) {
+                    Log.d(TAG, "⚠️ Catégorie obsolète ou invisible (stale node), re-scan...");
+                    continue; 
+                }
 
+                String nomCat = cat.getText() != null ? cat.getText().toString() : "Inconnu";
                 Log.d(TAG, "👉 Traitement de : " + nomCat);
+                
                 clickNode(cat);
                 processedItems.add(nomCat);
-                Thread.sleep(1000);
+                Thread.sleep(1500); // Délai augmenté pour l'ouverture du bloc
 
                 if (nomCat.contains("Murs")) {
                     traiterMursUnique();
                     refermerCategorie(nomCat);
-                } else if (nomCat.startsWith("Bloc") || estExpert(root)) {
+                } else if (nomCat.startsWith("Bloc") || estExpert(service.getRootInActiveWindow())) {
                     traiterBlocExpertAvecScroll();
                 } else {
                     traiterStandard();
                     refermerCategorie(nomCat);
                 }
             }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt(); // Bonne pratique : restaurer le statut d'interruption
         } catch (Exception e) {
             Log.e(TAG, "Erreur loop: " + e.getMessage());
         } finally {
@@ -160,9 +168,15 @@ public class ExpertValideScript {
         for (int i = 0; i < 15; i++) {
             if (!isRunning) break;
             AccessibilityNodeInfo root = service.getRootInActiveWindow();
-            if (root != null && cible != null && trouverTexte(root, cible)) return;
+            // Correction : root != null est redondant car trouverTexte le gère déjà
+            if (cible != null && trouverTexte(root, cible)) return;
             scroll(true, 1100);
-            try { Thread.sleep(1000); } catch (InterruptedException e) { break; }
+            try { 
+                Thread.sleep(1000); 
+            } catch (InterruptedException e) { 
+                Thread.currentThread().interrupt();
+                break; 
+            }
         }
     }
 
@@ -170,71 +184,6 @@ public class ExpertValideScript {
      * TRAITEMENT BLOC EXPERT.
      * Gère les éléments complexes avec scroll interne jusqu'à voir le bouton "Réduire".
      */
-    /*private void traiterBlocExpertAvecScroll() throws InterruptedException {
-        int safetyScrolls = 0;
-        while (isRunning && safetyScrolls < 10) {
-            AccessibilityNodeInfo root = service.getRootInActiveWindow();
-            if (root == null) break;
-
-            cliquerSiNonCoche(root, ID_EXP_BON_RADIO);
-            cliquerSiNonCoche(root, ID_EXP_PROPRE_CHECK);
-            traiterFonctionnement(root);
-
-            List<AccessibilityNodeInfo> reduire = root.findAccessibilityNodeInfosByViewId(ID_BOUTON_REDUIRE);
-            if (!reduire.isEmpty() && reduire.get(0).isVisibleToUser()) {
-                clickNode(reduire.get(0));
-                Thread.sleep(1000);
-                break;
-            }
-            scroll(false, 550);
-            Thread.sleep(1000);
-            safetyScrolls++;
-        }
-    }*/
-
- /*   private void traiterBlocExpertAvecScroll() throws InterruptedException {
-        int safetyScrolls = 0;
-        while (isRunning && safetyScrolls < 10) {
-            AccessibilityNodeInfo root = service.getRootInActiveWindow();
-            if (root == null) break;
-
-            cliquerSiNonCoche(root, ID_EXP_BON_RADIO);
-            cliquerSiNonCoche(root, ID_EXP_PROPRE_CHECK);
-            traiterFonctionnement(root);
-
-            // --- RECHERCHE AMÉLIORÉE DU BOUTON RÉDUIRE ---
-            AccessibilityNodeInfo btnReduire = null;
-
-            // Tentative 1 : Par ID
-            List<AccessibilityNodeInfo> reduireIds = root.findAccessibilityNodeInfosByViewId(ID_BOUTON_REDUIRE);
-            if (!reduireIds.isEmpty()) btnReduire = reduireIds.get(0);
-
-            // Tentative 2 : Par Texte (si ID échoue ou n'est pas visible)
-            if (btnReduire == null || !btnReduire.isVisibleToUser()) {
-                List<AccessibilityNodeInfo> reduireTexts = root.findAccessibilityNodeInfosByText("Réduire");
-                if (!reduireTexts.isEmpty()) btnReduire = reduireTexts.get(0);
-            }
-
-            if (btnReduire != null && btnReduire.isVisibleToUser()) {
-                Rect r = new Rect();
-                btnReduire.getBoundsInScreen(r);
-
-                // On vérifie que le bouton n'est pas caché derrière le bouton orange de validation
-                // Sur tablette, on laisse une marge de 5 pixels seulement
-                if (r.top > 0 && r.bottom < (screenHeight - 100)) {
-                    Log.d(TAG, "🎯 Bouton Réduire trouvé à Y=" + r.top + ". Fermeture du bloc.");
-                    clickNode(btnReduire);
-                    Thread.sleep(1000);
-                    break;
-                }
-            }
-
-            Log.d(TAG, "⬇️ 'Réduire' non visible, scroll suivant... (" + safetyScrolls + ")");
-            scroll(false, 550);
-            Thread.sleep(1000);
-            safetyScrolls++;
-        }
-    }*/
     private void traiterBlocExpertAvecScroll() throws InterruptedException {
         int safetyScrolls = 0;
         while (isRunning && safetyScrolls < 10) {
@@ -393,8 +342,16 @@ public class ExpertValideScript {
      */
     private void clickNode(AccessibilityNodeInfo n) {
         if (n == null) return;
+        
+        // --- MISE À JOUR CRITIQUE DES COORDONNÉES AVANT CLIC ---
+        n.refresh(); 
+        Rect r = new Rect();
+        n.getBoundsInScreen(r);
+        
+        Log.d(TAG, "🖱️ Clic demandé sur [" + n.getText() + "] à position: " + r.centerX() + "," + r.centerY());
+
         if (!n.performAction(AccessibilityNodeInfo.ACTION_CLICK)) {
-            Rect r = new Rect(); n.getBoundsInScreen(r);
+            // Si le clic interne échoue, on utilise les coordonnées fraîches
             dispatchTap(r.centerX(), r.centerY());
         }
     }
@@ -443,7 +400,8 @@ public class ExpertValideScript {
                 valid.add(n);
             }
         }
-        Collections.sort(valid, (a, b) -> {
+        // Correction : Utilisation de List.sort au lieu de Collections.sort
+        valid.sort((a, b) -> {
             Rect ra = new Rect(); a.getBoundsInScreen(ra);
             Rect rb = new Rect(); b.getBoundsInScreen(rb);
             return Integer.compare(ra.top, rb.top);
@@ -465,6 +423,7 @@ public class ExpertValideScript {
     }
 
     private boolean estExpert(AccessibilityNodeInfo root) {
+        if (root == null) return false;
         return !root.findAccessibilityNodeInfosByViewId(ID_EXP_BON_RADIO).isEmpty();
     }
 
@@ -488,4 +447,3 @@ public class ExpertValideScript {
         return false;
     }
 }
-
