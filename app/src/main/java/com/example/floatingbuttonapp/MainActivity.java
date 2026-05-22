@@ -1,7 +1,9 @@
 package com.example.floatingbuttonapp;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -10,8 +12,12 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final int PERMISSION_REQUEST_CODE = 101;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +50,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Étape 3 : Sélectionnez 'Pas de restriction' (Batterie)", Toast.LENGTH_LONG).show();
             requestBatteryIgnore();
         }
-        // 4. Tout est OK
+        // 4. Vérifier les Notifications (Nécessaire pour Android 13+)
+        else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, PERMISSION_REQUEST_CODE);
+        }
+        // 5. Tout est OK
         else {
             // C'est ici qu'on dit au Service : "Eh ! Affiche le bouton !"
             Intent intent = new Intent("com.example.floatingbuttonapp.ACTION_SHOW_BUTTON");
