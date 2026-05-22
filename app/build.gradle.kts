@@ -26,12 +26,14 @@ android {
             manifestPlaceholders["appLabel"] = "Assistant (TEST)"
         }
         release {
+            manifestPlaceholders += mapOf()
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            manifestPlaceholders["appLabel"] = "Mon Assistant"
+            signingConfig = signingConfigs.getByName("debug")
+            manifestPlaceholders["appLabel"] = "Check assistant"
         }
     }
     compileOptions {
